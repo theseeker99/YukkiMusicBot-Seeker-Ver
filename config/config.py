@@ -24,11 +24,11 @@ API_HASH = getenv("API_HASH")
 BOT_TOKEN = getenv("BOT_TOKEN")
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://filetolinkbot:Eotdpubgrp100@cluster0.mrodmc5.mongodb.net/?retryWrites=true&w=majority")
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 DURATION_LIMIT_MIN = int(
-    getenv("DURATION_LIMIT", "120")
+    getenv("DURATION_LIMIT", "1200")
 )  # Remember to give value in Minutes
 
 # Duration Limit for downloading Songs in MP3 or MP4 format from bot
@@ -37,10 +37,10 @@ SONG_DOWNLOAD_DURATION = int(
 )  # Remember to give value in Minutes
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001470378052"))
 
 # A name for your Music bot.
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME" Musica)
 
 # Your User ID.
 OWNER_ID = list(
@@ -76,7 +76,7 @@ AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", None)
 
 # Time after which you're assistant account will leave chats automatically.
 AUTO_LEAVE_ASSISTANT_TIME = int(
-    getenv("ASSISTANT_LEAVE_TIME", "5400")
+    getenv("ASSISTANT_LEAVE_TIME", None)
 )  # Remember to give value in Seconds
 
 # Time after which bot will suggest random chats about bot commands.
@@ -91,7 +91,7 @@ AUTO_DOWNLOADS_CLEAR = getenv("AUTO_DOWNLOADS_CLEAR", True)
 AUTO_SUGGESTION_MODE = getenv("AUTO_SUGGESTION_MODE", None)
 
 # Set it true if you want your bot to be private only [You'll need to allow CHAT_ID via /authorise command then only your bot will play music in that chat.]
-PRIVATE_BOT_MODE = getenv("PRIVATE_BOT_MODE", None)
+PRIVATE_BOT_MODE = getenv("PRIVATE_BOT_MODE", True)
 
 # Time sleep duration For Youtube Downloader
 YOUTUBE_DOWNLOAD_EDIT_SLEEP = int(getenv("YOUTUBE_EDIT_SLEEP", "2"))
@@ -103,8 +103,8 @@ TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "2"))
 GITHUB_REPO = getenv("GITHUB_REPO", None)
 
 # Spotify Client.. Get it from https://developer.spotify.com/dashboard
-SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "a5f0cc28271f419ab594a17d58cf35be")
-SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "fa10d5b4acc64ce485cd91d74c98a864")
+SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", a5f0cc28271f419ab594a17d58cf35be)
+SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", fa10d5b4acc64ce485cd91d74c98a864)
 
 # Maximum number of video calls allowed on bot. You can later set it via /set_video_limit on telegram
 VIDEO_STREAM_LIMIT = int(getenv("VIDEO_STREAM_LIMIT", "4"))
